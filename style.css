@@ -6,6 +6,8 @@ body {
     padding: 0;
 }
 
+/* Style pour l'accueil */
+
 .background-container {
     position: relative;
     background-image: url('/images/banner.png');
@@ -112,7 +114,83 @@ header {
     color: #8474B7;
 }
 
+/* Style pour la présentation */
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 150px;
+}
+
+.image-presentation {
+    position: relative;
+}
+
+.image-presentation::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #8474B7;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.image-presentation img {
+    background-color: #25336E;
+    height: 520px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.text-presentation {
+    position: relative;
+    background-color: #25336E;
+    width: 970px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-presentation::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #8474B7;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.text-presentation h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-presentation h4 {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.text-presentation p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
 @media (max-width: 1000px) {
+
+    /* Style pour l'accueil */
+
     .burger-menu {
         display: block;
     }
@@ -138,5 +216,36 @@ header {
 
     .menu ul a {
         font-size: 2.5vw;
+    }
+
+    /* Style pour la présentation */
+
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin: 50px;
+    }
+
+    .image-presentation img {
+        height: auto;
+        width: 100%;
+    }
+
+    .text-presentation {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .text-presentation h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-presentation h4 {
+        font-size: 1.2rem;
+    }
+
+    .text-presentation p {
+        font-size: 1rem;
     }
 }
