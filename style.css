@@ -515,6 +515,13 @@ a {
     font-weight: bold;
 }
 
+/* Style pour le footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
 @media (max-width: 1000px) {
 
     /* Style pour l'accueil */
