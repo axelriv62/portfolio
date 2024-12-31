@@ -117,7 +117,7 @@ header {
 /* Style pour la présentation */
 
 .presentation {
-    height: 800px;
+
     background-color: #151F50;
 }
 
@@ -161,7 +161,6 @@ header {
     width: 970px;
     padding: 20px;
     border-radius: 10px;
-
 }
 
 .text-presentation::before {
@@ -294,6 +293,84 @@ header {
 .button:hover {
     transform: translateY(-5px);
 }
+
+/* Style pour les compétences */
+
+.competences {
+    background-color: #151F50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+}
+
+.competences h2 {
+    font-size: 2rem;
+}
+
+.competence-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    z-index: 0;
+}
+
+.competence {
+    background-color: #25336E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.competence::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #8474B7;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.competence ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.competence ul li {
+    padding: 10px;
+    flex: 1 1 50%;
+    max-width: 80px;
+}
+
+.competence-icon {
+    background-color: #8474B7;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.competence-icon:hover {
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 1000px) {
 
