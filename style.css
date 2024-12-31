@@ -193,6 +193,177 @@ header {
     margin-bottom: 1.5rem;
 }
 
+/* Style pour les formations et expériences */
+
+.formations-experiences {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 250px;
+    position: relative;
+}
+
+.formation, .experiences {
+    width: 40%;
+}
+
+.formation {
+    height: 100%;
+}
+
+.formation-item {
+    margin-bottom : 90px
+}
+
+.experience-item {
+    margin-bottom : 50px
+}
+
+.formation h2, .experiences h2 {
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+
+.formation-item, .experience-item {
+    position: relative;
+    background-color: #25336E;
+    padding: 25px 50px 25px 40px;
+    border-radius: 10px;
+}
+
+.formation-item::before, .experience-item::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #8474B7;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.formation::before, .experiences::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: white;
+    z-index: -2;
+}
+
+.formation::before {
+    left: 20%;
+    margin-top: 300px;
+    height: 800px;
+}
+
+.experiences::before {
+    left: 65%;
+    margin-top: 300px;
+    height: 1000px;
+}
+
+.formation-item h3, .experience-item h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.dates, .lieu {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dates {
+    font-size: 1.1rem;
+}
+
+.formation-item h4 {
+    margin-bottom: 0;
+}
+
+.formation-item p, .formation-item ul {
+    margin-top: 5px;
+}
+
+/* Style pour les compétences */
+
+.competences {
+    background-color: #151F50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+}
+
+.competences h2 {
+    font-size: 2rem;
+}
+
+.competence-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    z-index: 0;
+}
+
+.competence {
+    background-color: #25336E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.competence::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: #8474B7;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.competence ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.competence ul li {
+    padding: 10px;
+    flex: 1 1 50%;
+    max-width: 80px;
+}
+
+.competence-icon {
+    background-color: #8474B7;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.competence-icon:hover {
+    transform: scale(1.1);
+}
+
 /* Style pour les réalisations */
 
 .realisations {
@@ -291,178 +462,7 @@ header {
 }
 
 .button:hover {
-    transform: translateY(-5px);
-}
-
-/* Style pour les compétences */
-
-.competences {
-    background-color: #151F50;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 100px;
-}
-
-.competences h2 {
-    font-size: 2rem;
-}
-
-.competence-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    z-index: 0;
-}
-
-.competence {
-    background-color: #25336E;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    position: relative;
-    width: 100%;
-    max-width: 350px;
-}
-
-.competence::before {
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: 25px;
-    width: 100%;
-    height: 100%;
-    background-color: #8474B7;
-    z-index: -1;
-    border-radius: 10px;
-}
-
-.competence ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 0;
-    width: 100%;
-    justify-content: center;
-}
-
-.competence ul li {
-    padding: 10px;
-    flex: 1 1 50%;
-    max-width: 80px;
-}
-
-.competence-icon {
-    background-color: #8474B7;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    border-radius: 15%;
-    box-sizing: border-box;
-    transition: transform 0.3s ease-in-out;
-}
-
-.competence-icon:hover {
-    transform: scale(1.1);
-}
-
-/* Style pour les formations et expériences */
-
-.formations-experiences {
-    display: flex;
-    justify-content: space-between;
-    padding: 150px 250px;
-    position: relative;
-}
-
-.formation, .experiences {
-    width: 40%;
-}
-
-.formation {
-    height: 100%;
-}
-
-.formation-item {
-    margin-bottom : 90px
-}
-
-.experience-item {
-    margin-bottom : 50px
-}
-
-.formation h2, .experiences h2 {
-    font-size: 2rem;
-    margin-bottom: 100px;
-}
-
-.formation-item, .experience-item {
-    position: relative;
-    background-color: #25336E;
-    padding: 25px 50px 25px 40px;
-    border-radius: 10px;
-}
-
-.formation-item::before, .experience-item::before {
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: 25px;
-    width: 100%;
-    height: 100%;
-    background-color: #8474B7;
-    z-index: -1;
-    border-radius: 10px;
-}
-
-.formation::before, .experiences::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 5px; /* Adjust the width of the line as needed */
-    background-color: white; /* Color of the line */
-    z-index: -2; /* Ensure it is behind the items */
-}
-
-.formation::before {
-    left: 20%; /* Position the line in the middle of the formation section */
-    margin-top: 300px;
-    height: 800px;
-}
-
-.experiences::before {
-    left: 65%; /* Position the line in the middle of the experiences section */
-    margin-top: 300px;
-    height: 1000px;
-}
-
-.formation-item h3, .experience-item h3 {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-.dates, .lieu {
-    font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.dates {
-    font-size: 1.1rem;
-}
-
-.formation-item h4 {
-    margin-bottom: 0;
-}
-
-.formation-item p, .formation-item ul {
-    margin-top: 5px;
+    transform: scale(1.05);
 }
 
 /* Style pour les contacts */
