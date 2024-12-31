@@ -465,6 +465,56 @@ header {
     margin-top: 5px;
 }
 
+/* Style pour les contacts */
+
+.contacts {
+    background-color: #151F50;
+    padding: 100px;
+}
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.contact-item {
+    background-color: #25336E;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+.contacts h2 {
+    font-size: 2rem;
+    padding-bottom: 25px;
+    margin-left: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: #DEDEDD;
+}
+
+.contact-item img {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
 @media (max-width: 1000px) {
 
     /* Style pour l'accueil */
