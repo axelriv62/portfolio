@@ -93,7 +93,7 @@ header {
     color: #DEDEDD;
 }
 
-.realisation {
+.realisations-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,7 +116,7 @@ header {
     transform: translateY(-10px);
 }
 
-.realisation img {
+.realisations-items img {
     width: 90%;
     border-top: 15px solid #8474B7;
     border-left: 15px solid #8474B7;

@@ -91,7 +91,7 @@ header {
     font-size: 1.5rem;
 }
 
-.competence-items {
+.competences-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,7 +100,7 @@ header {
     z-index: 0;
 }
 
-.competence {
+.competence-item {
     background-color: #25336E;
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@ header {
     flex: 1 1 800px;
 }
 
-.competence::before {
+.competence-item::before {
     content: '';
     position: absolute;
     top: -15px;
@@ -123,7 +123,7 @@ header {
     border-radius: 10px;
 }
 
-.competence ul {
+.competence-item ul {
     list-style-type: none;
     display: flex;
     flex-wrap: nowrap;
@@ -133,7 +133,7 @@ header {
     justify-content: center;
 }
 
-.competence ul li {
+.competence-item ul li {
     padding: 10px;
     max-width: 100px;
 }
