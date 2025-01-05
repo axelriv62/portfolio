@@ -76,7 +76,7 @@ header {
 
 .background-container {
     position: relative;
-    background-image: url('/media/banner.png');
+    background-image: url('media/banner.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
