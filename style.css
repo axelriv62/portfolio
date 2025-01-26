@@ -672,3 +672,24 @@ footer {
         margin: 0 auto 25px;
     }
 }
+
+/* Animation d'apparition au fur et à mesure */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
