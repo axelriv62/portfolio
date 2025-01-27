@@ -339,7 +339,7 @@ header {
     border-radius: 10px;
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     padding: 20px;
 }
 
@@ -445,7 +445,8 @@ header {
     position: relative;
     transition: transform 0.3s ease-in-out;
     width: 100%;
-    max-width: 450px;
+    max-width: 350px;
+    font-size: 0.9rem;
 }
 
 .realisation-item:hover {
